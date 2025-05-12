@@ -7,10 +7,10 @@ export const ALL_REPORTS = {
       fecha_fin: { type: "date", label: "Fecha Fin" },
       monto_minimo: { type: "number", label: "Monto Mínimo" },
       monto_maximo: { type: "number", label: "Monto Máximo" },
-      tipo_campana: { 
-        type: "select", 
+      tipo_campana: {
+        type: "select",
         label: "Tipo Campaña",
-        options: ["Donación", "Voluntariado", "Emergencia"] 
+        options: ["Donación", "Voluntariado"]
       }
     },
     columns: [
@@ -21,6 +21,7 @@ export const ALL_REPORTS = {
       { key: "fecha", label: "Fecha", format: "date" }
     ]
   },
+
   donaciones_por_campana: {
     name: "Donaciones por Campaña",
     endpoint: "/reportes/donaciones-por-campana",
@@ -33,13 +34,14 @@ export const ALL_REPORTS = {
       { key: "total_recaudado", label: "Total", format: "currency" }
     ]
   },
+
   voluntarios_por_campana: {
     name: "Voluntarios por Campaña",
     endpoint: "/reportes/voluntarios-por-campana",
     filters: {
-      tipo_campana: { 
-        type: "select", 
-        label: "Tipo Campaña", 
+      tipo_campana: {
+        type: "select",
+        label: "Tipo Campaña",
         options: ["Salud", "Educación", "Ambiental"]
       }
     },
@@ -48,17 +50,20 @@ export const ALL_REPORTS = {
       { key: "voluntarios", label: "Voluntarios" }
     ]
   },
+
   horas_voluntariado: {
     name: "Horas de Voluntariado",
     endpoint: "/reportes/horas-voluntariado",
     filters: {
-      fecha_rango: { type: "range", label: "Rango de Fechas" }
+      fecha_inicio: { type: "date", label: "Fecha Inicio" },
+      fecha_fin: { type: "date", label: "Fecha Fin" }
     },
     columns: [
       { key: "nombre", label: "Voluntario" },
       { key: "total_horas", label: "Total de Horas" }
     ]
   },
+
   resumen_general: {
     name: "Resumen General",
     endpoint: "/reportes/resumen",
@@ -68,5 +73,20 @@ export const ALL_REPORTS = {
       { key: "total_voluntarios", label: "Total Voluntarios" },
       { key: "total_horas", label: "Total Horas Voluntariado" }
     ]
-  }
+  },
+  voluntarios_por_campana: {
+  name: "Voluntarios por Campaña",
+  endpoint: "/reportes/voluntarios-por-campana",
+  filters: {
+    tipo_campana: {
+      type: "select",
+      label: "Tipo Campaña",
+      options: ["donación", "voluntariado", "Emergencia"] // Deben coincidir con los valores en DB
+    }
+  },
+  columns: [
+    { key: "campana", label: "Campaña" },
+    { key: "voluntarios", label: "Voluntarios" }
+  ]
+},
 };

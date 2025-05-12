@@ -78,6 +78,7 @@ CREATE TABLE seguimientos_voluntarios (
     id SERIAL PRIMARY KEY,
     voluntario_id INT REFERENCES voluntarios(id),
     observacion TEXT,
+    horas DECIMAL(5,2),
     fecha DATE
 );
 

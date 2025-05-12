@@ -37,13 +37,13 @@ const ReportSelector = ({ onSelectReport }) => {
         dropdownStyle={{ 
           maxHeight: 400, 
           overflow: 'auto', 
-          minWidth: '300px'  // Ancho mínimo del dropdown
+          minWidth: '300px'  
         }}
         placeholder="Busque y seleccione un reporte"
         allowClear
         treeDefaultExpandAll
         onChange={onChange}
-        size="large"  // Tamaño más grande
+        size="large"  
       >
         {Object.entries(categories).map(([catKey, category]) => (
           <TreeNode 
