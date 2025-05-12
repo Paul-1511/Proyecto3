@@ -93,3 +93,10 @@ npm install react-router-dom antd axios
 npm run dev
 ```
 
+
+## Instrucciones de uso
+
+1.  Selecciona si quieres ver donaciones o voluntarios
+2.  Si seleccionas donaciones ve las fechas desde antes de 2023 (en la base de datos se usaron datos del año 2023)
+3.  Si seleccionas voluntarios por campaña u horas de cambio selecciona el tipo de campaña voluntariado o donaciones
+
