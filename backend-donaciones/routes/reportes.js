@@ -4,6 +4,6 @@ const reportesController = require('../controller/reportes');
 
 router.get('/donaciones', reportesController.reporteDonaciones);
 router.get('/donaciones-por-campana', reportesController.donacionesPorCampana);
-router.get('/donaciones', reportesController.reporteDonacioneslive)
+router.get('/donaciones-live', reportesController.reporteDonacioneslive)
 
 module.exports = router;
