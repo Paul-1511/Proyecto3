@@ -56,8 +56,9 @@ DB_PASSWORD= (tu contraseña)
 DB_NAME=voluntariado
 DB_PORT=5432
 
-DATABASE_URL=postgres://postgres:datos2025@localhost:5432/voluntariado
+DATABASE_URL=postgres://postgres:tucontraseña@localhost:5432/voluntariado
 ```
+- Cambia los campos con tu usuario y contraseña real
 
 - El `PORT` puede cambiarse según necesidad.
 ## Instalación y ejecución
