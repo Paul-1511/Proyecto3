@@ -84,6 +84,7 @@ Usa `nodemon` para detectar cambios en tiempo real
 npm start
 ```
 3. Configura el Frontend
+   
 Desde otro símbolo de sistema ejecuta estos comandos
 ``` bash
 cd front-donaciones
