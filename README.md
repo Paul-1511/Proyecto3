@@ -72,6 +72,7 @@ cd Proyecto3
 ``` bash
 cd backend-donaciones
 npm install
+npm install express pdfkit body-parser cors
 ```
 ### Modo Desarrollo (con reinicio automático)
 ``` bash
