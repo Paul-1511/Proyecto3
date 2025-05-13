@@ -13,6 +13,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.main-header {
+  background-color: #55aaff;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 4px solid #0073e7;
+  border-radius: 12px;
+}
+
+
 a {
   font-weight: 500;
   color: #646cff;

@@ -8,13 +8,13 @@ const ReportSelector = ({ onSelectReport }) => {
   const [value, setValue] = useState(null);
 
   const categories = {
-    donaciones: {
-      name: "Donaciones",
-      reports: ['donaciones_detalladas', 'donaciones_por_campana']
+    Consultas: {
+      name: "Consultas",
+      reports: ['donaciones_detalladas']
     },
-    voluntariado: {
-      name: "Voluntariado",
-      reports: ['voluntarios_por_campana', 'horas_voluntariado']
+    donaciones: {
+      name: "Reportes",
+      reports: ['donaciones_por_campana','voluntarios_por_campana', 'horas_voluntariado']
     },
   };
 
@@ -28,7 +28,7 @@ const ReportSelector = ({ onSelectReport }) => {
       title="Seleccionar Reporte" 
       bordered={false}
       style={{ width: '300px', marginBottom: '40px' }}
-      bodyStyle={{ padding: '16px' }}
+      bodyStyle={{ padding: '0px' }}
     >
       <TreeSelect
         showSearch

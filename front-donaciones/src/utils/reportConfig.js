@@ -1,17 +1,13 @@
 export const ALL_REPORTS = {
   donaciones_detalladas: {
-    name: "Donaciones Detalladas",
+    name: "Hacer una Consulta",
     endpoint: "/reportes/donaciones",
     filters: {
       fecha_inicio: { type: "date", label: "Fecha Inicio" },
       fecha_fin: { type: "date", label: "Fecha Fin" },
       monto_minimo: { type: "number", label: "Monto Mínimo" },
       monto_maximo: { type: "number", label: "Monto Máximo" },
-      tipo_campana: {
-        type: "select",
-        label: "Tipo Campaña",
-        options: ["Donación", "Voluntariado"]
-      }
+      
     },
     columns: [
       { key: "id", label: "ID" },
@@ -74,6 +70,7 @@ export const ALL_REPORTS = {
       { key: "total_horas", label: "Total Horas Voluntariado" }
     ]
   },
+  // eslint-disable-next-line no-dupe-keys
   voluntarios_por_campana: {
   name: "Voluntarios por Campaña",
   endpoint: "/reportes/voluntarios-por-campana",
@@ -81,7 +78,7 @@ export const ALL_REPORTS = {
     tipo_campana: {
       type: "select",
       label: "Tipo Campaña",
-      options: ["donación", "voluntariado", "Emergencia"] // Deben coincidir con los valores en DB
+      options: ["donación", "voluntariado"] 
     }
   },
   columns: [

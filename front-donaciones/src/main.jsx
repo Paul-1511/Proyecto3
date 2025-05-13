@@ -6,6 +6,9 @@ import './app.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+  <header className="main-header">
+  Administración de campañas de donación y voluntariado
+  </header>
     <App />
   </React.StrictMode>
 );

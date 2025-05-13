@@ -21,7 +21,7 @@ const ReportsDashboard = () => {
               justifyContent: 'center', 
               alignItems: 'center', 
               height: '300px',
-              border: '2px dashed #5a5a5a',
+              border: '2px dashed rgba(0, 0, 0, 0.25)',
               borderRadius: '2px'
             }}>
               <p style={{ color: 'rgba(0, 0, 0, 0.25)' }}>
