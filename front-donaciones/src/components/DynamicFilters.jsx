@@ -61,6 +61,11 @@ const DynamicFilters = ({ filtersConfig, onFilter }) => {
           Aplicar Filtros
         </Button>
       </Form.Item>
+      <Form.Item>
+        <Button type="default" onClick={() => form.resetFields()}>
+          Limpiar Filtros
+        </Button>
+      </Form.Item>
     </Form>
   );
 };

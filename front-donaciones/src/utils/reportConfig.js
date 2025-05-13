@@ -12,9 +12,8 @@ export const ALL_REPORTS = {
     columns: [
       { key: "id", label: "ID" },
       { key: "campana_nombre", label: "Campaña" },
-      { key: "tipo", label: "Tipo" },
       { key: "monto", label: "Monto", format: "currency" },
-      { key: "fecha", label: "Fecha", format: "date" }
+      { key: "fecha", label: "Fecha", format: "date" },
     ]
   },
 
@@ -34,13 +33,6 @@ export const ALL_REPORTS = {
   voluntarios_por_campana: {
     name: "Voluntarios por Campaña",
     endpoint: "/reportes/voluntarios-por-campana",
-    filters: {
-      tipo_campana: {
-        type: "select",
-        label: "Tipo Campaña",
-        options: ["Salud", "Educación", "Ambiental"]
-      }
-    },
     columns: [
       { key: "campana", label: "Campaña" },
       { key: "voluntarios", label: "Voluntarios" }
